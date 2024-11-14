@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../Vendors/fonts/Roboto-Regular.ttf");
+}
+
+.nav-container{
+  width: 68vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container {
+  width: 68vw;
+  margin: 0 auto;
+}
+
+.container{
+  width: 68vw;
+  margin: 0 auto;
+}
+
+.container-1{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 58vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Distributes space evenly between the divs */
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; /* Adjust as needed */
+}
+
+header .line {
+  width: 113px;
+  height: 4px; /* Line thickness */
+  background-color: white; /* Line color */
+  margin: 0 15px;
+}
+
+.divider i {
+  font-size: xx-large;
+}

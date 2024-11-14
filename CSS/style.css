@@ -1,0 +1,386 @@
+@import url(./reset.css);
+@import url(./utilites.css);
+@import url(./all.css);
+
+nav {
+  background-color: #2C3E50;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  position: fixed;
+  width: 100vw;
+}
+
+.brand {
+  letter-spacing: 0.05em;
+  line-height: .1rem;
+  font-size: 1.5em;
+  font-weight:700;
+}
+
+.nav-links ul {
+  margin-right: 2rem;
+  display: flex;
+  gap:1rem;
+}
+
+.nav-links a {
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: .7rem;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: #1ABC9C;
+}
+
+header {
+  background-color:#1ABC9C ;
+  padding-top: 6.2rem;
+  padding-bottom: 6.8rem;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  padding-top: .8rem;
+  font-size: 4.5rem;
+}
+
+header p {
+  font-weight: 400;
+  font-size: x-large;
+}
+
+#portfolio{
+  padding-top: 4%;
+  text-align: center;
+  color: #2C3E50;
+
+}
+
+#portfolio .line{
+  width: 113px;
+  height: 4px; 
+  background-color: #2c3e50; 
+  margin: 0 15px;
+}
+
+#portfolio h2{
+  font-size: 3rem;
+}
+
+.port-images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.port-images img {
+  border-radius: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+#about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: white;
+  background-color: #1ABC9C;
+  text-align: center;
+}
+#about h2 {
+  font-size: 3rem;
+}
+
+#about .line {
+  width: 113px;
+  height: 4px; 
+  background-color: white; 
+  margin: 0 15px;
+}
+#about p {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+.block {
+  display: inline-flex  ;
+  width: 430px;
+  gap: 50px;
+  padding-bottom: 40px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
+#about a {
+  line-height: 10px;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  border: 2px solid #fff;
+  padding: 1.2rem 1.8rem;
+  gap: 10px;
+  border-radius: 0.5rem;
+  transition: .3s ease-in-out;
+}
+#about a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+#contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 3rem;
+}
+
+#contact .line{
+  width: 113px;
+  height: 4px; 
+  background-color: #2c3e50; 
+  margin: 0 15px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.centered-form {
+  width: 60%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350
+}
+
+input[type="text"] {
+  border-style: none;
+  padding: 20px 0;
+  margin: 20px 0;
+  font-size: x-large;
+  border-style: none;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+input[type="email"] {
+  border-style: none;
+  margin: 20px 0;
+  padding: 20px 0;
+  font-size: x-large;
+  border-style: none;
+  border-bottom: 1px solid #b4b4b4;
+}
+input[type="tel"] {
+  border-style: none;
+  margin: 20px 0;
+  padding: 20px 0;
+  font-size: x-large;
+  border-style: none;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+input[type="text"]:focus, textarea:focus {
+  outline: none; 
+}
+
+input[type="email"]:focus{
+  outline: none; 
+}
+
+input[type="tel"]:focus{
+  outline: none; 
+}
+
+textarea {
+  border-style: none;
+  border-bottom: 1px solid #b4b4b4;
+  padding: 20px 0;
+  margin: 20px 0;
+  height: 150px; /* Set a fixed height for the textarea */
+  resize: vertical; /* Allow users to resize the textarea vertically */
+  font-size: xx-large;
+
+}
+
+button {
+  padding: 20px 30px;
+  margin: 20px 0;
+  text-align: left;
+  width: fit-content;
+  border-radius: 0.5rem;
+  background-color: #1ABC9C;
+  color: white;
+  border-style: none;
+  font-size: large;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2C3E50;
+  color: #fff;
+}
+
+input[type="text"]::placeholder {
+  top: 10px; /* Position the placeholder inside the input */
+  left: 10px;
+  transition: all 0.3s ease; /* Smooth transition when moving */
+}
+
+input[type="text"]:focus::placeholder {
+  top: 0px; /* Move the placeholder up */
+  right: 80%; /* Move the placeholder to the right */
+  color: #8d8d8d; /* Change placeholder color on focus */
+  font-size: 15px; /* Optionally, make the placeholder smaller */
+}
+
+input[type="email"]::placeholder {
+  top: 10px; /* Position the placeholder inside the input */
+  left: 10px;
+  transition: all 0.3s ease; /* Smooth transition when moving */
+}
+
+input[type="email"]:focus::placeholder {
+  top: 0px; /* Move the placeholder up */
+  right: 80%; /* Move the placeholder to the right */
+  color: #8d8d8d; /* Change placeholder color on focus */
+  font-size: 15px; /* Optionally, make the placeholder smaller */
+}
+
+input[type="tel"]::placeholder {
+  top: 10px; /* Position the placeholder inside the input */
+  left: 10px;
+  transition: all 0.3s ease; /* Smooth transition when moving */
+}
+
+input[type="tel"]:focus::placeholder {
+  top: 0px; /* Move the placeholder up */
+  right: 80%; /* Move the placeholder to the right */
+  color: #8d8d8d; /* Change placeholder color on focus */
+  font-size: 15px; /* Optionally, make the placeholder smaller */
+}
+
+textarea::placeholder {
+  top: 10px; /* Position the placeholder inside the input */
+  left: 10px;
+  transition: all 0.3s ease; /* Smooth transition when moving */
+}
+
+textarea:focus::placeholder {
+  top: 0px; /* Move the placeholder up */
+  right: 80%; /* Move the placeholder to the right */
+  color: #8d8d8d; /* Change placeholder color on focus */
+  font-size: 15px; /* Optionally, make the placeholder smaller */
+}
+
+.info {
+  background-color: #2C3E50;
+  color: white;
+  text-align: center;
+}
+
+.location h3{
+  font-size: x-large;
+  padding-bottom: 1rem;
+}
+.location p{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.web h3 {
+  font-size: x-large;
+  padding-bottom: 1.5rem;
+}
+
+.web i {
+  padding: 20px;
+}
+
+
+.facebook {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  transition: .3s ease-in-out;
+}
+.facebook:hover i {
+  color: #000000;
+}
+.facebook:hover {
+  background-color: white;
+} 
+
+.twitter {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+.twitter:hover i {
+  color: #000000;
+}
+.twitter:hover {
+  background-color: white;
+} 
+
+.linkedin {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+.linkedin:hover i {
+  color: #000000;
+}
+.linkedin:hover {
+  background-color: white;
+} 
+
+.globe {
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: .2s ease-in-out;
+}
+.globe:hover i {
+  color: #000000;
+}
+
+.globe:hover {
+  background-color: white;
+} 
+
+.about h3 {
+  font-size: x-large;
+  padding-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.name {
+  color:#1ABC9C;
+  text-decoration: underline;
+}
+
+footer{
+  background-color: #1A252F;
+  text-align: center;
+  color: white;
+  padding-top: 1.5rem ;
+  padding-bottom: 1.5rem ;
+}
+.heart {
+
+  color: red;
+}
